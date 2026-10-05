@@ -1,0 +1,43 @@
+{
+    "name": "tyhpdef/livewire-livewire-impl",
+    "description": "Implementation package for tyhpdef/livewire-livewire. Require tyhpdef/livewire-livewire, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "4.4.5.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": "8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/laravel-framework": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/livewire-livewire"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "livewire/livewire": "4.4.5"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/laravel-framework": "@dev"
+    }
+}
